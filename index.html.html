@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para Mi Amor ❤️</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+      <svg
+        class="music-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+      </svg>
+      <span class="music-text">Reproducir Música</span>
+    </div>
+
+    <audio id="bgMusic" loop>
+      <!-- Aquí puedes agregar tu archivo de música -->
+      <source src="./musica/fondo.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-image">
+          <img src="./fotos/foto_principal.jpg" alt="Diana y Gino" />
+        </div>
+        <div class="names">
+          Dianita <span class="names-divider">❤️</span> Gino
+        </div>
+        <h1>Eres el amor de mi vida</h1>
+        <p class="subtitle">
+          A pesar de la distancia, te siento junto a mi cada momento
+        </p>
+        <p class="date">Feliz San Valentín 2026</p>
+      </section>
+
+      <!-- Love Letter -->
+      <section class="love-letter">
+        <h2>Mi princesa,</h2>
+        <p>
+          Desde el día en que te dieron la respuesta de la embajada, ha sido una
+          mezcla de sentimientos, por un lado el saber que tenías que irte y no
+          te volvería a ver por mucho tiempo me partía el corazón, por otro lado
+          el saber que cumplirías uno de tantos sueños que he sido testigo de
+          que te has planteado desde hace tiempo.
+        </p>
+        <p>
+          El primer día que no te tuve a mi lado no sabía que hacer, si llorar o
+          ser fuerte por ti, si arrepentirme por haberte dejado ir, pero entendí
+          que siempre te amaré a pesar de la distancia y a pesar de cualquier
+          situación.
+        </p>
+        <p>
+          Hoy, lo único que deseo es que seas feliz, que cumplas tus sueños
+          princesa y que sepas y tengas siempre presente que siempre tendrás mi
+          apoyo incondicional. Siempre estaré ahí para festejar tus triunfos y
+          para se tu soporte en momentos de duda o de ansiedad.
+        </p>
+        <p>
+          Te amo más de lo que las palabras pueden expresar. Estoy tan orgulloso
+          de ti y de todo lo que estás logrando. Pronto estaremos juntos otra
+          vez.
+        </p>
+        <div class="signature">Con todo mi amor, tu esposito que te ama ❤️</div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section reveal">
+        <h2 class="gallery-title">Nuestros Momentos</h2>
+        <div class="gallery">
+          <div class="photo-card">
+            <img src="./fotos/foto_1.jpg" alt="Momento 1" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Nuestro hogar 😍</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_2.jpg" alt="Momento 2" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Panamá</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_3.jpg" alt="Momento 3" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Nuestro Mojito</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_4.jpg" alt="Momento 4" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Navidad 2025</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_5.jpg" alt="Momento 5" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">De shopping EEUU</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_6.jpg" alt="Momento 6" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Playita</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_7.jpg" alt="Momento 7" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Austin</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_8.jpg" alt="Momento 8" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Mar y arena con mi esposita 💕</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_9.jpg" alt="Momento 9" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Playa en Panamá</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_10.jpg" alt="Momento 10" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Amor infinito</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_11.jpg" alt="Momento 11" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Siempre juntos</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_12.jpg" alt="Momento 12" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Juntos por siempre</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_13.jpg" alt="Momento 13" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Nuestro mojito</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_14.jpg" alt="Momento 14" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Siempre apoyándonos</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_15.jpg" alt="Momento 15" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Gym</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_16.jpg" alt="Momento 16" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Baños de agua santa</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_17.jpg" alt="Momento 17" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Con nuestro bebé</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_18.jpg" alt="Momento 18" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Nuestro amor</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_19.jpg" alt="Momento 19" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Nuestro maqueen</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_20.jpg" alt="Momento 20" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Felices</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_21.jpg" alt="Momento 21" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Nuestro amor</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_22.jpg" alt="Momento 22" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Nuestras locuras juntos 🤣</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_23.jpg" alt="Momento 23" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Te amo mi princesa 💕</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_24.jpg" alt="Momento 24" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Halloween 2025</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_25.jpg" alt="Momento 25" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Cumpleaños Bolon 2025</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_26.jpg" alt="Momento 26" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Pasión y recuerdos</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_27.jpg" alt="Momento 27" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Paseo al parque con el Mojito 🐶</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_28.jpg" alt="Momento 28" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Felices juntos 💕</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_29.jpg" alt="Momento 29" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Mitad del mundo 🌎</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_30.jpg" alt="Momento 30" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">SUMMIT New York</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_31.jpg" alt="Momento 31" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Juntitos mi vidita</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_32.jpg" alt="Momento 32" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Baños de agua santa</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_33.jpg" alt="Momento 33" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Mi princesa hermosa</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_34.jpg" alt="Momento 34" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Puyo 2025</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_35.jpg" alt="Momento 35" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Navidad</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_36.jpg" alt="Momento 36" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Reencuentro</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_37.jpg" alt="Momento 37" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Con mi esposita en la playa</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_38.jpg" alt="Momento 38" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Galápagos</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_39.jpg" alt="Momento 39" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Galápagos</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_40.jpg" alt="Momento 40" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Mi esposita linda</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_41.jpg" alt="Momento 41" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">Nuestro hogar</div>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <img src="./fotos/foto_42.jpg" alt="Momento 42" class="photo-img" />
+            <div class="photo-overlay">
+              <div class="photo-caption">TE AMO BEBÉ 💕</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reasons I Love You Section -->
+      <section class="reasons-section reveal">
+        <h2 class="reasons-title">Razones por las que Te Amo mi princesa 💖</h2>
+        <div class="reasons-grid">
+          <div class="reason-card">
+            <div class="reason-number">01</div>
+            <div class="reason-text">
+              Tu sonrisa ilumina hasta los días más oscuros y me recuerda que
+              todo estará bien 😊.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">02</div>
+            <div class="reason-text">
+              Tu valentía para perseguir tus sueños, incluso cuando significa
+              estar lejos de casa 💪.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">03</div>
+            <div class="reason-text">
+              La forma en que nos entendemos sin necesidad de decir palabras,
+              con una simple mirada 🤝.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">04</div>
+            <div class="reason-text">
+              Tus tortillas de verde con camarones mamacita ufffff!! 🍤🤤.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">05</div>
+            <div class="reason-text">
+              Tu inteligencia y dedicación que me inspiran a ser una mejor
+              persona cada día 😏.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">06</div>
+            <div class="reason-text">
+              La ternura con la que cuidas de las personas que amas,
+              incluyéndome a mí.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">07</div>
+            <div class="reason-text">
+              Tu fortaleza para enfrentar desafíos, demostrando que eres
+              imparable 💪.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">08</div>
+            <div class="reason-text">
+              Los pequeños detalles que haces para demostrarme tu amor, incluso
+              desde la distancia 💌.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">09</div>
+            <div class="reason-text">
+              Tu apoyo incondicional en mis proyectos y sueños, siendo mi mayor
+              admiradora 😍.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">10</div>
+            <div class="reason-text">
+              La forma en que haces que cada día sea especial, simplemente
+              existiendo en mi vida 💖.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">11</div>
+            <div class="reason-text">
+              Tu pasión por aprender y crecer, convirtiéndote en la mejor
+              versión de ti misma 😏.
+            </div>
+          </div>
+
+          <div class="reason-card">
+            <div class="reason-number">12</div>
+            <div class="reason-text">
+              Porque eres mi compañera, mi mejor amiga, mi amor y mi hogar, sin
+              importar dónde estemos 💕.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Counter Section -->
+      <section class="counter-section reveal">
+        <h3 class="counter-title">
+          Cuenta regresiva para volvernos a ver ⏱️ <br />
+          <span class="counter-subtitle">10/07/2026 💕</span>
+        </h3>
+        <div class="countdown-container">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days">00</span>
+            <span class="countdown-label">Días</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">00</span>
+            <span class="countdown-label">Horas</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">00</span>
+            <span class="countdown-label">Minutos</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">00</span>
+            <span class="countdown-label">Segundos</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map of Love Section -->
+      <section class="map-section reveal">
+        <h2 class="map-title">Nuestro Amor no tiene fronteras 🌍</h2>
+        <div class="map-container">
+          <div class="map-visual">
+            <div class="location">
+              <div class="location-icon">🇪🇨</div>
+              <div class="location-name">Riobamba</div>
+              <div class="location-country">Ecuador</div>
+            </div>
+
+            <div class="connection-line">
+              <div class="line"></div>
+            </div>
+
+            <div class="location">
+              <div class="location-icon">🇪🇸</div>
+              <div class="location-name">Barcelona</div>
+              <div class="location-country">España</div>
+            </div>
+          </div>
+
+          <p class="map-quote">
+            "La distancia nos ha enseñado que no importa donde estemos, nuestros
+            corazones y cuerpos se atraen.
+            <br />
+            <br />
+            Es algo sobrenatural e inexplicable, el pensarte a cada momento e
+            imaginarme que estas aquí conmigo, y el solo hecho de esto me hace
+            olvidarme de todo lo malo y tener una sonrisa en el rostro día a
+            día. <br />
+            <br />
+            Aunque los primeros días fueron difíciles, pienso que esto ha hecho
+            que nuestro amor se vuelva mas solido y nos unamos de una forma que
+            no hubiéramos imaginado. <br />
+            <br />
+            Espero ancioso el día de volverte a ver, para abrazarte, besarte,
+            amarte mas que nunca y no soltarte jamás. 💕 "
+          </p>
+
+          TE AMO ESPOSITA MÍA 💕
+
+          <p class="distance-text">
+            ~9,200 km de distancia física, pero 0 km en nuestros corazones
+          </p>
+        </div>
+      </section>
+
+      <!-- Gratitude Section -->
+      <section class="gratitude-section reveal">
+        <h2 class="gratitude-title">Gracias por Ser <b>"TU"</b> Siempre</h2>
+        <div class="gratitude-content">
+          <p class="gratitude-text">
+            Gracias por
+            <span class="gratitude-highlight">creer en tus sueños</span> y tener
+            el coraje de perseguirlos, incluso cuando eso significó dejarlo todo
+            atrás. Tu determinación me inspira cada día.
+          </p>
+          <p class="gratitude-text">
+            Gracias por
+            <span class="gratitude-highlight">confiar en nuestro amor</span> lo
+            suficiente como para saber que la distancia es solo temporal, pero
+            lo que tenemos es para siempre.
+          </p>
+          <p class="gratitude-text">
+            Gracias por
+            <span class="gratitude-highlight">cada videollamada</span>, cada
+            mensaje de buenas noches, cada "te extraño, te amo" que me recuerda
+            lo afortunado que soy de tenerte en mi vida.
+          </p>
+          <p class="gratitude-text">
+            Gracias por
+            <span class="gratitude-highlight">ser mi inspiración</span> para ser
+            mejor, para trabajar más duro y para construir el futuro que ambos
+            merecemos.
+          </p>
+          <div class="gratitude-signature">
+            Tu gordito, el hombre que te ama y te amará para toda la eternidad
+            💕
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">❤️ TE EXTRAÑO MI PRINCESA ❤️</footer>
+    </div>
+
+    <script>
+      // Particles Generation
+      function createParticles() {
+        const particlesContainer = document.getElementById("particles");
+
+        // Create hearts
+        for (let i = 0; i < 15; i++) {
+          const heart = document.createElement("div");
+          heart.className = "heart";
+          heart.innerHTML = "❤️";
+          heart.style.left = Math.random() * 100 + "%";
+          heart.style.animationDelay = Math.random() * 8 + "s";
+          heart.style.fontSize = Math.random() * 15 + 15 + "px";
+          particlesContainer.appendChild(heart);
+        }
+
+        // Create petals
+        for (let i = 0; i < 30; i++) {
+          const petal = document.createElement("div");
+          petal.className = "petal";
+          petal.style.left = Math.random() * 100 + "%";
+          petal.style.animationDelay = Math.random() * 12 + "s";
+          petal.style.animationDuration = Math.random() * 8 + 10 + "s";
+          particlesContainer.appendChild(petal);
+        }
+      }
+
+      // Music Player
+      const musicPlayer = document.getElementById("musicPlayer");
+      const bgMusic = document.getElementById("bgMusic");
+      let isPlaying = false;
+
+      musicPlayer.addEventListener("click", () => {
+        if (isPlaying) {
+          bgMusic.pause();
+          musicPlayer.classList.remove("playing");
+          musicPlayer.querySelector(".music-text").textContent =
+            "Reproducir Música";
+        } else {
+          bgMusic.play();
+          musicPlayer.classList.add("playing");
+          musicPlayer.querySelector(".music-text").textContent =
+            "Pausar Música";
+        }
+        isPlaying = !isPlaying;
+      });
+
+      // Day Counter replaced with Countdown
+      function updateCountdown() {
+        // Set your reunion date here (Year, Month-1, Day, Hour, Minute)
+        const reunionDate = new Date("2026-07-10T00:00:00").getTime();
+
+        const countdownInterval = setInterval(() => {
+          const now = new Date().getTime();
+          const distance = reunionDate - now;
+
+          if (distance < 0) {
+            clearInterval(countdownInterval);
+            document.getElementById("days").textContent = "00";
+            document.getElementById("hours").textContent = "00";
+            document.getElementById("minutes").textContent = "00";
+            document.getElementById("seconds").textContent = "00";
+            return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60),
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").textContent = String(days).padStart(
+            2,
+            "0",
+          );
+          document.getElementById("hours").textContent = String(hours).padStart(
+            2,
+            "0",
+          );
+          document.getElementById("minutes").textContent = String(
+            minutes,
+          ).padStart(2, "0");
+          document.getElementById("seconds").textContent = String(
+            seconds,
+          ).padStart(2, "0");
+        }, 1000);
+      }
+
+      // Scroll Reveal Animation
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+
+        reveals.forEach((element) => {
+          const windowHeight = window.innerHeight;
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            element.classList.add("active");
+          }
+        });
+      }
+
+      // Initialize
+      window.addEventListener("load", () => {
+        createParticles();
+        updateCountdown();
+        revealOnScroll();
+      });
+
+      window.addEventListener("scroll", revealOnScroll);
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
