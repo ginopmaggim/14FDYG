@@ -491,6 +491,207 @@ body {
   margin-top: 5px;
 }
 
+/* Celebration Mode */
+.counter-section.celebration-active {
+  max-width: 700px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 40px 20px;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  animation: none;
+}
+
+.countdown-block[hidden] {
+  display: none !important;
+}
+
+.celebration-mode {
+  position: relative;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.celebration-hearts span {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  animation: floatCelebrationHeart 4s ease-in-out infinite;
+}
+
+.celebration-hearts span:nth-child(1) {
+  left: 5%;
+  top: 10%;
+  animation-delay: 0s;
+}
+.celebration-hearts span:nth-child(2) {
+  right: 8%;
+  top: 15%;
+  animation-delay: 0.8s;
+}
+.celebration-hearts span:nth-child(3) {
+  left: 15%;
+  bottom: 20%;
+  animation-delay: 1.6s;
+}
+.celebration-hearts span:nth-child(4) {
+  right: 12%;
+  bottom: 25%;
+  animation-delay: 2.4s;
+}
+.celebration-hearts span:nth-child(5) {
+  left: 45%;
+  top: 5%;
+  animation-delay: 3.2s;
+}
+
+@keyframes floatCelebrationHeart {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-12px) scale(1.15);
+    opacity: 0.9;
+  }
+}
+
+.celebration-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  color: var(--deep-rose);
+  margin-bottom: 10px;
+  animation: celebrationPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes celebrationPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+.celebration-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.celebration-photo-frame {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(
+    135deg,
+    var(--deep-rose),
+    #ffd700,
+    var(--lavender),
+    var(--deep-rose)
+  );
+  background-size: 300% 300%;
+  animation: rotateBorder 4s linear infinite;
+  box-shadow: 0 15px 40px rgba(255, 158, 191, 0.4);
+}
+
+@keyframes rotateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.celebration-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  opacity: 0;
+  transform: scale(0.92);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.celebration-photo-frame img.photo-visible {
+  opacity: 1;
+  transform: scale(1);
+  animation: photoFloat 3.5s ease-in-out infinite;
+}
+
+@keyframes photoFloat {
+  0%,
+  100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.03) translateY(-6px);
+  }
+}
+
+.celebration-message {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  animation: celebrationPulse 2s ease-in-out infinite;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -20px;
+  pointer-events: none;
+  animation: confettiFall linear infinite;
+  z-index: 1;
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(450px) rotate(720deg);
+    opacity: 0.3;
+  }
+}
+
+.fireworks-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+.fireworks-canvas.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.celebration-active .particles .heart,
+body.celebration-active .particles .petal {
+  animation-duration: 4s;
+}
+
 /* Timeline Section */
 .timeline-section {
   margin: 100px auto;
@@ -923,6 +1124,15 @@ body {
 
   .countdown-number {
     font-size: 2.2rem;
+  }
+
+  .celebration-photo-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  .celebration-title {
+    font-size: 2rem;
   }
 }
 
